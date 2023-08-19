@@ -251,11 +251,11 @@ const KycVarification = () => {
         {/* table end */}
       </div>
       <div className="Pagination-container">
-        <span className="mr-4">
+        <span style={{marginRight:'10px'}} className="">
           Showing <strong style={{ color: "#007BFF" }}>1</strong> of 46
         </span>
         <div className="">
-          <i className="fa-solid fa-angles-left page-box-arrow px-3  text-[#0388D4]"></i>
+          <i className="fa-solid fa-angles-left page-box-arrow "></i>
           <span
             style={{ background: "#007BFF", color: "white" }}
             className=" page-box "
