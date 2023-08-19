@@ -1,0 +1,49 @@
+.popup-ContainerReason{
+    width: 400px;
+    box-shadow: 0px 2px 18px #5c5757;
+    position: absolute;
+    z-index: 150;
+    left: 20%;
+    background-color: white;
+    border-radius: 12px;
+}
+.btn-contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.reason-title{
+    font-size: 16px;
+   margin-bottom: 0px;
+   color: #FF0000;
+   margin-left: 20px;
+}
+.submit-btn{
+    padding: 8px 27px;
+    border: 2px solid #0019FF;
+    border-radius: 6px;
+    color: #0019FF;
+}
+.cancel-btn{
+    padding: 8px 27px;
+    border: 2px solid #FF0000;
+    border-radius: 6px;
+    color: #FF0000;
+    margin-left: 25px;
+}
+
+.textAria{
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    
+}
+.textInput{
+    border: 2px solid #D9D9D9;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 5px;
+}
