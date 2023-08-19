@@ -1,9 +1,9 @@
-.popup-ContainerVerify{
+.popup-ContainerReject{
     width: 400px;
     box-shadow: 0px 2px 18px #5c5757;
     position: absolute;
     z-index: 50;
-    top: 37vh;
+    top: 35vh;
     left: 37%;
     background-color: white;
     border-radius: 7px;
@@ -12,23 +12,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
-.Verify-title{
-    font-size: 16px;
-    padding: 15px;
-    font-weight: 400;
-  
-
-
+.reject-title{
+    font-size: 14px;
+   padding: 15px;
+   font-weight: 400;
 }
 .verify-btn-yes{
     padding: 8px 27px;
     border: 2px solid #0019FF;
     border-radius: 6px;
     color: #0019FF;
-    cursor: pointer;
 }
 .verify-btn-no{
     padding: 8px 27px;
@@ -36,5 +32,4 @@
     border-radius: 6px;
     color: #FF0000;
     margin-left: 25px;
-    cursor: pointer;
 }

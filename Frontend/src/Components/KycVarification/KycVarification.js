@@ -1,16 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./KycVarification.css";
 import DocumentView from "./Popups/DocumentView";
 import Verify from "./Modal/Verify";
 import Reject from "./Modal/Reject/Reject";
-import idFont1 from '../../images/ID-Front.png';
-import idback2 from '../../images/ID-BACK.png';
-import taxFront3 from '../../images/TAX-Doc-Front.png';
-import idback4 from '../../images/TAX Doc. Back.png';
-import addresProp5 from '../../images/Address-Proof.png';
-
-
-
 
 const KycVarification = () => {
   const [showDocumentView, setDocumentView] = useState("");
@@ -31,37 +23,23 @@ const KycVarification = () => {
       TaxDocFront: "View",
       TaxDocBack: "View",
       AddressProof: "View",
-      idFont1,
-      idback2,
-      taxFront3,
-      idback4,
-      addresProp5
-
     },
   ];
 
-  const closeModal = () => {
-    setDocumentView(false);
-    setopenVirify(false);
-    setopenReject(false)
-  };
-
- 
   return (
     <div className="container-wrapper">
       {showDocumentView && (
         <DocumentView
-        closeModal={closeModal}
           showPopupState={[showDocumentView, setDocumentView]}
         ></DocumentView>
       )}
 
       {openVirify && (
-        <Verify  closeModal={closeModal} showPopupState={[openVirify, setopenVirify]}></Verify>
+        <Verify showPopupState={[openVirify, setopenVirify]}></Verify>
       )}
 
       {openReject && (
-        <Reject  closeModal={closeModal} showPopupState={[openReject, setopenReject]}></Reject>
+        <Reject showPopupState={[openReject, setopenReject]}></Reject>
       )}
 
       <div className="kyc-select-date-contain">
@@ -179,7 +157,7 @@ const KycVarification = () => {
           <tr>
             {tableData.map((data) => (
               <>
-                <td>2</td>
+                <td>{data.SlNO}</td>
                 <td>{data.NumberID}</td>
                 <td>{data.Country}</td>
                 <td>{data.IDTitle}</td>

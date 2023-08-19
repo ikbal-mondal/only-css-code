@@ -25,6 +25,7 @@
     border: 2px solid #0019FF;
     border-radius: 6px;
     color: #0019FF;
+    cursor: pointer;
 }
 .verify-btn-no{
     padding: 8px 27px;
@@ -32,4 +33,6 @@
     border-radius: 6px;
     color: #FF0000;
     margin-left: 25px;
+    cursor: pointer;
+
 }
