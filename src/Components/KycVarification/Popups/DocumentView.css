@@ -1,0 +1,40 @@
+.popup-Container{
+    width: 500px;
+    box-shadow: 0px 2px 18px #5c5757;
+    position: absolute;
+    z-index: 50;
+    top: 4vh;
+    left: 35%;
+    background-color: white;
+    border-radius: 7px;
+}
+.popup-top-text-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+}
+.popup-title{
+    font-size: 18px;
+    font-weight: 400;
+}
+.fa-xmark{
+    font-size:18px;
+    left: 170px;
+    position: relative;
+
+}
+.document-contain{
+  margin: 40px;
+}
+.document-image{
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+
+}
